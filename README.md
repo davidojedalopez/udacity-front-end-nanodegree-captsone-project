@@ -1,4 +1,4 @@
-# Natural Language Processing (NLP) API Udacity's front end nanodegree project
+# Travel app for Udacity's front end nanodegree capstone project
 
 This project lets you plan a trip and uses [Geonames](https://www.geonames.org/), [Weatherbit](https://www.weatherbit.io/), and [Pixabay](https://pixabay.com/) APIs to provide information about the destination.
 

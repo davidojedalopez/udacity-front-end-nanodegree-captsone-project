@@ -1,3 +1,5 @@
+// Helper functions for DOM manipulation
+
 function addWeather(weather, container) {
   if(!weather) {
     return

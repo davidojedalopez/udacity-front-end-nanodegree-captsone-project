@@ -1,4 +1,5 @@
 import { handleSubmit } from './js/app'
+import { saveTrip, getLatestTrip } from './js/trip'
 import { getPlace } from './js/places'
 import { getCurrentWeather, getWeatherForecast } from './js/weather'
 import { getPlaceImages } from './js/photos'
@@ -15,6 +16,8 @@ import './styles/photos.scss'
 
 export {
     handleSubmit,
+    saveTrip,
+    getLatestTrip,
     getPlace,
     getCurrentWeather,
     getWeatherForecast,

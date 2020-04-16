@@ -4,12 +4,14 @@
 
     <head>
         <meta charset="utf-8">
-        <title>Test</title>
+        <title>Bon Voyage! 🛫</title>
         <link rel="stylesheet"type="css"href="/styles/resets.css">
         <link rel="stylesheet"type="css"href="/styles/base.css">
         <link rel="stylesheet"type="css"href="/styles/header.css">
         <link rel="stylesheet"type="css"href="/styles/form.css">
         <link rel="stylesheet"type="css"href="/styles/footer.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     </head>
 
     <body>
@@ -22,6 +24,8 @@
                 <input type="text" name="placename" placeholder="Where to, traveler?" maxlength="20" value="Seattle" required="required">
                 <input type="date" name="travel-date-start" required="required" value="">
                 <input type="date" name="travel-date-end" required="required" value="">                
+                <button type="button" data-id="latest-trip">Latest trip</button>
+                <button type="button" data-id="save-trip">Save</button>
                 <button type="submit">Let's go!</button>
             </form>              
 

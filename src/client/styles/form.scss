@@ -7,7 +7,7 @@ form {
   grid-template-areas: 
     "place place place place"
     "date-start date-start date-end date-end"
-    "submit submit submit submit"
+    "save latest submit submit"
   ;
   grid-gap: .5rem;
   
@@ -27,21 +27,32 @@ form {
 
     &[name="travel-date-end"] {
       grid-area: date-end
-    }
+    }    
   }
 
-  button[type="submit"] {
-    grid-area: submit;
+  button {
     cursor: pointer;
     background-color: whitesmoke;    
-    border-bottom-left-radius: .5rem;
-    border-bottom-right-radius: .5rem;
     font-size: 1.2em;
     padding: .5rem;
     &:hover {
       background-color: floralwhite;
       box-shadow: 5px 4px 6px -3px #000000;
     }  
+  }
+
+  button[data-id="latest-trip"] {
+    grid-area: latest;
+  }
+
+  button[data-id="save-trip"] {
+    grid-area: save;
+    border-bottom-left-radius: .5rem;
+  }
+
+  button[type="submit"] {
+    grid-area: submit;        
+    border-bottom-right-radius: .5rem;    
   }
 
 }

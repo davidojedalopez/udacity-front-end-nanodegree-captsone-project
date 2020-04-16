@@ -1,14 +1,47 @@
 form {
-  border: 1px solid #545454;
-  border-radius: .5rem;
-  padding: 20px;
-  margin-bottom: 2rem;
-}
-
-input {
-  padding: 5px 20px;
-  width: -webkit-fill-available;
-  line-height: 16px;
-  margin: 10px 0;
+  padding: .5rem 2rem 1.5rem 2rem;
+  margin: auto;
+  max-width: 500px;
   
+  display: grid;
+  grid-template-areas: 
+    "place place place place"
+    "date-start date-start date-end date-end"
+    "submit submit submit submit"
+  ;
+  grid-gap: .5rem;
+  
+  input {
+    font-size: 1.1em;  
+    padding: .6rem;    
+
+    &[type="text"] {
+      grid-area: place;
+      border-top-left-radius: .5rem;
+      border-top-right-radius: .5rem;
+    }
+
+    &[name="travel-date-start"] {
+      grid-area: date-start
+    }
+
+    &[name="travel-date-end"] {
+      grid-area: date-end
+    }
+  }
+
+  button[type="submit"] {
+    grid-area: submit;
+    cursor: pointer;
+    background-color: whitesmoke;    
+    border-bottom-left-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+    font-size: 1.2em;
+    padding: .5rem;
+    &:hover {
+      background-color: floralwhite;
+      box-shadow: 5px 4px 6px -3px #000000;
+    }  
+  }
+
 }

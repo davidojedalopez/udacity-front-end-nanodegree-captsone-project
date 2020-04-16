@@ -1,6 +1,6 @@
 # Natural Language Processing (NLP) API Udacity's front end nanodegree project
 
-This project uses [Aylien's NLP API](https://aylien.com/) to analyze news articles.
+This project lets you plan a trip and uses [Geonames](https://www.geonames.org/), [Weatherbit](https://www.weatherbit.io/), and [Pixabay](https://pixabay.com/) APIs to provide information about the destination.
 
 ![Example of app](example.png)
 
@@ -9,14 +9,17 @@ This project uses [Aylien's NLP API](https://aylien.com/) to analyze news articl
 Follow these steps:
 
 - Clone this repo
-- Install depedendencies with npm install.
-- Create account and API keys on [Aylien's website](https://aylien.com/).
-- Create .env file at root directory and add APP_ID and API_KEY values with your own API keys.
+- Install dependencies with npm install.
+- Create account and API keys for the following APIs:
+   - [Geonames](https://www.geonames.org/)   
+   - [Weatherbit](https://www.weatherbit.io/)
+   - [Pixabay](https://pixabay.com/)
 - For development environment:
    - Open src/server/index.js and make sure the root GET endpoint its configured to server your client index.html file
    - Run `npm run build-dev` in one terminal.
    - Run `npm start` in another terminal
-   - Open src/server/index.js and make sure the root GET endpoint its configured to server your **client** index.html file
+   - Open src/server/index.js and make sure the root GET endpoint its configured to server your **client** index.html file.
+   - Open your localhost at port 8081
 - For production environment:
    - Open src/server/index.js and make sure the root GET endpoint its configured to server your **dist** index.html file
    - Run `npm run build-prod`
@@ -25,3 +28,10 @@ Follow these steps:
 ## Tests
 
 To run the test suite execute the command `npm test`. Tests are written with Jest.
+
+## Extended features
+
+I implemented the additional features:
+- Display length of trip
+- Pull forecast for multiple days
+- Incorporate weather icons

@@ -1,0 +1,21 @@
+.photos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: .25rem;
+  max-width: 80vw;
+  justify-content: center;
+  margin: auto;
+
+  .photo {
+    width: 200px;
+  }
+
+  figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+}
+

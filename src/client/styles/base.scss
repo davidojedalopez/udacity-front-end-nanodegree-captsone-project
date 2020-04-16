@@ -3,54 +3,37 @@ body {
   flex-direction: column;
   min-height: 100vh;
   line-height: 1.3em;  
+
+  background-color: whitesmoke
 }
 
+
 h1 {
-  font-size: 2em;
-  padding-bottom: 2rem;
+  font-size: 2.2em;
+  padding: 2rem;
+  text-align: center;
 }
 
 h2 {
-  font-size: 1.4em;  
+  font-size: 1.6em;  
   display: inline-block;
+  padding: .5rem;
 }
 
-main {
-  flex: 2;
-  width: 85vw;  
-  margin: 50px auto;
+h3 {
+  font-size: 1.1em;
+  padding: .5rem;
 }
 
 a {
   color: inherit;
 }
 
-section {    
-  > details {
-    padding-bottom: 2.5rem;
-  }
-
-  details div {
-    padding-top: 1rem;
-  }
+a:hover {
+  color: gray;
 }
 
-ul {
-  padding-left: 2rem;
-  list-style-type: unset;
-  
-  li {
-    padding-top: .2rem;
-    padding-bottom: .2rem;
-  }
-}
-
-button {
-  cursor: pointer;
-  background-color: whitesmoke;
-  border-radius: .5rem;
-  &:hover {
-    background-color: floralwhite;
-    box-shadow: 5px 4px 6px -3px #000000;
-  }
+.trip-duration {
+  text-align: center;
+  padding-bottom: 2.5rem;
 }

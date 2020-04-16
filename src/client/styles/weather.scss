@@ -1,0 +1,37 @@
+.weather {
+  display: flex;
+  flex-direction: column;
+
+  max-width: 80vw;
+  margin: auto;
+
+  padding-bottom: 2rem;
+
+  h2 {
+    text-align: center;
+  }
+
+  .current-weather {
+    display: flex;
+    flex-direction: row;    
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2rem;
+  }
+
+  .forecast {
+    display: grid;    
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    grid-gap: 3rem;
+
+    .day-forecast {
+      display: flex;
+      flex-direction: column;
+      place-items: center;
+    }
+  }
+
+  .weather-icon {
+    width: 100px;
+  }
+}
